@@ -7,8 +7,8 @@ ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 
 # 设置应用目录
-WORKDIR /app
-RUN mkdir -p /app/target
+WORKDIR /base
+RUN mkdir -p /base/target /app
 
 # 设置端口
 EXPOSE 8080
