@@ -14,4 +14,4 @@ RUN mkdir -p /base/target /app
 EXPOSE 8080
 
 # 容器启动
-ENTRYPOINT exec java -Djava.securities.egd=file:/dev/./urandom -Dspring.profiles.active=native -jar target/server.jar
+ENTRYPOINT exec java -Djava.securities.egd=file:/dev/./urandom -jar target/server.jar
