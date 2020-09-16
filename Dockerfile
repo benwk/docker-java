@@ -6,6 +6,9 @@ MAINTAINER benwk
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 
+# 安装中文字体
+RUN apt-get install fontconfig
+
 # 设置应用目录
 WORKDIR /base
 RUN mkdir -p /base/target /app
