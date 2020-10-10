@@ -1,6 +1,7 @@
 FROM tenmaker/maven-base:1.0.7-jdk8-cloud
 
-MAINTAINER benwk
+# MAINTAINER benwk
+LABEL maintainer="benwk@delay.work"
 
 # 设置环境变量
 ENV CATALINA_HOME /usr/local/tomcat
